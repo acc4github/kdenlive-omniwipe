@@ -39,4 +39,6 @@ See the LICENSE file for full details.
 ## Credits
 
 Developed for the open-source video editing community.  
-Copyright (C) 2026 acc4commissions and Grok 4.3
+Copyright (C) 2026 acc4commissions
+
+AI Assistant: Grok(4.3)

@@ -9,7 +9,7 @@ A frei0r-based, versatile directional wipe transition plugin for Kdenlive. It se
 ## Features
 
 - **Limit Range to Clips**: Content-aware toggle
-    - ON: Detects non-transparent areas in both clips, and restrict the wipe area to its rectangle.
+    - ON: Detects non-transparent areas in both clips, and restricts the wipe area to its rectangle.
     - OFF: Wipes the entire frame.
 - **Direction Axis + Wheel**: Base axis (0°, 90°, 180°) combined with wheel offset for wipes in any angle.
 - **Speed Curve (%)**: Controls acceleration/deceleration using power-law easing. Higher values create stronger non-linear timing.
@@ -22,9 +22,9 @@ A frei0r-based, versatile directional wipe transition plugin for Kdenlive. It se
 
 ## Installation (Windows)
 
-1. Build or obtain the `omni-wipe.dll` and `omni-wipe.xml` files.
-2. Place the plugin binary in Kdenlive's frei0r plugins folder (e.g., `kdenlive-master\lib\frei0r-1`).
-3. Place the XML file in Kdenlive's transitions folder (e.g., `kdenlive-master\bin\data\kdenlive\transitions`).
+1. Download the build from the release. The zip file should have `omni-wipe.dll` and `omni-wipe.xml`.
+2. Place `omni-wipe.dll` in Kdenlive's frei0r plugins folder (e.g., `kdenlive-master\lib\frei0r-1`).
+3. Place `omni-wipe.xml` in Kdenlive's transitions folder (e.g., `kdenlive-master\bin\data\kdenlive\transitions`).
 4. Restart Kdenlive. The transition appears under Transitions.
 
 ## License

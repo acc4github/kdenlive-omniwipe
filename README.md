@@ -9,7 +9,7 @@ A frei0r-based, versatile directional wipe transition plugin for Kdenlive. It se
 ## Features
 
 - **Limit Range to Clips**: Content-aware toggle
-    - ON: Detects non-transparent areas in both clips, and restricts the wipe area to its rectangle.
+    - ON: Detects non-transparent areas in both clips and restricts the wipe area to their bounding rectangle.
     - OFF: Wipes the entire frame.
 - **Direction Axis + Wheel**: Base axis (0°, 90°, 180°) combined with wheel offset for wipes in any angle.
 - **Speed Curve (%)**: Controls acceleration/deceleration using power-law easing. Higher values create stronger non-linear timing.

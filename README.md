@@ -20,6 +20,10 @@ A frei0r-based, versatile directional wipe transition plugin for Kdenlive. It se
 - **Border Blur**: Blurs the border (including the bar).
 - **Invert**: Swap incoming and outgoing clips.
 
+## Demo
+
+https://github.com/user-attachments/assets/11addd7a-4c5a-4592-bf80-7d0570a5f92f
+
 ## Installation (Windows)
 
 1. Download the build from the release. The zip file should have `omni-wipe.dll` and `omni-wipe.xml`.

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE kpartgui>
+<transition tag="frei0r.omni-wipe" id="frei0r.omni-wipe" type="videotransition">
+    <name>OmniWipe</name>
+    <description>A Swiss Army knife for wipe transitions.</description>
+    <author>acc4commissions and Grok 4.3</author>
+    <parameter type="animated" name="position" max="1000" min="0" default="0=0;%out=1" factor="1000">
+        <name>Wipe position (progress)</name>
+    </parameter>
+    <parameter type="bool" name="limit_range_to_clip" default="0">
+    <name>Limit range to clips</name>
+    </parameter>
+    <parameter type="list" name="direction_axis" default="0" paramlist="0;1;2">
+        <name>Wipe Direction Axis</name>
+        <paramlistdisplay>+0,+90,+180</paramlistdisplay>
+    </parameter>
+    <parameter type="double" name="direction_wheel" max="180" min="0" default="0">
+        <name>Wipe Direction Wheel</name>
+    </parameter>
+    <parameter type="double" name="speed_curve" max="100" min="0" default="0">
+        <name>Speed Curve (%)</name>
+    </parameter>
+        <parameter type="double" name="gentle_arrival" max="100" min="0" default="0">
+        <name>Gentle Arrival (%)</name>
+    </parameter>
+    <parameter type="list" name="border_type" default="0" paramlist="0;1">
+        <name>Border Type</name>
+        <paramlistdisplay>None,Bar</paramlistdisplay>
+    </parameter>
+    <parameter type="double" name="bar_width" max="100" min="0" default="10">
+        <name>Bar Width (px)</name>
+    </parameter>
+    <parameter type="double" name="bar_color_hue" max="120" min="0" default="0">
+        <name>Bar Color Hue</name>
+    </parameter>
+    <parameter type="double" name="bar_color_saturaion" max="100" min="0" default="0">
+        <name>Bar Color Saturation</name>
+    </parameter>
+    <parameter type="double" name="bar_color_value" max="100" min="0" default="100">
+        <name>Bar Color Value</name>
+    </parameter>
+    <parameter type="double" name="border_blur" max="100" min="0" default="0">
+        <name>Border Blur</name>
+    </parameter>
+    <parameter type="bool" name="invert" default="0">
+        <name>Invert</name>
+    </parameter>
+
+    <preview>
+        <parameter name="position">0=0;-1=1</parameter>
+    </preview>
+</transition>

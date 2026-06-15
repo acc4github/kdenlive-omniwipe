@@ -351,18 +351,22 @@ void f0r_update2(f0r_instance_t i, double time, const uint32_t *in1, const uint3
 
     double prog = get_progress(inst, p);
     double main_proj = inst->start_proj + prog * (inst->end_proj - inst->start_proj);
-    double bar_proj = main_proj;
 
+    // Adaptive padding for both Border Type modes
+    double pad = 0.0;
     if (inst->border_type == 1) {
-        double pad = half_bar + blur_rad * 1.2;
-        bar_proj = (inst->start_proj - pad) + prog * ((inst->end_proj - inst->start_proj) + 2*pad);
+        pad = half_bar + blur_rad * 1.2;
+    } else if (inst->border_blur > 0.5) {
+        pad = blur_rad;
     }
+
+    double wipe_proj = inst->start_proj - pad + prog * ((inst->end_proj - inst->start_proj) + 2 * pad);
 
     for (int y = 0; y < h; ++y) {
         int row = y * w;
         for (int x = 0; x < w; ++x) {
             double proj = x * inst->wipe_dx + y * inst->wipe_dy;
-            double dist = proj - bar_proj;
+            double dist = proj - wipe_proj;
 
             uint32_t col_in  = get_pixel(clip_in,  w, h, x, y, inst->in_min_x,  inst->in_min_y,  inst->in_max_x,  inst->in_max_y);
             uint32_t col_out = get_pixel(clip_out, w, h, x, y, inst->out_min_x, inst->out_min_y, inst->out_max_x, inst->out_max_y);

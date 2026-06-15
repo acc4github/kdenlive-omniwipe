@@ -2,6 +2,9 @@
 
 A frei0r-based, versatile directional wipe transition plugin for Kdenlive. It serves as a flexible tool for wipe transitions with adjustable direction, easing, colored bar, and content-aware optimizations.
 
+<img width="447" height="463" alt="kdenlive_LQjyiNDgq7" src="https://github.com/user-attachments/assets/e06d946d-d4ee-4763-9731-93e38c239d61" />
+
+
 ## Features
 
 - **Limit Range to Clips**: Content-aware toggle

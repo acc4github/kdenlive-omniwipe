@@ -8,7 +8,7 @@
         <name>Wipe position (progress)</name>
     </parameter>
     <parameter type="bool" name="limit_range_to_clip" default="0">
-    <name>Limit range to clips</name>
+    <name>Limit Range to Clips</name>
     </parameter>
     <parameter type="list" name="direction_axis" default="0" paramlist="0;1;2">
         <name>Wipe Direction Axis</name>
@@ -20,27 +20,30 @@
     <parameter type="double" name="speed_curve" max="100" min="0" default="0">
         <name>Speed Curve (%)</name>
     </parameter>
-        <parameter type="double" name="gentle_arrival" max="100" min="0" default="0">
+    <parameter type="double" name="gentle_arrival" max="100" min="0" default="0">
         <name>Gentle Arrival (%)</name>
     </parameter>
     <parameter type="list" name="border_type" default="0" paramlist="0;1">
         <name>Border Type</name>
         <paramlistdisplay>None,Bar</paramlistdisplay>
     </parameter>
-    <parameter type="double" name="bar_width" max="100" min="0" default="10">
+    <parameter type="double" name="bar_width" max="100" min="0" default="20">
         <name>Bar Width (px)</name>
     </parameter>
     <parameter type="double" name="bar_color_hue" max="120" min="0" default="0">
         <name>Bar Color Hue</name>
     </parameter>
-    <parameter type="double" name="bar_color_saturaion" max="100" min="0" default="0">
+    <parameter type="double" name="bar_color_saturation" max="100" min="0" default="0">
         <name>Bar Color Saturation</name>
     </parameter>
     <parameter type="double" name="bar_color_value" max="100" min="0" default="100">
         <name>Bar Color Value</name>
     </parameter>
+    <parameter type="double" name="bar_color_opacity" max="100" min="0" default="100">
+        <name>Bar Color Opacity</name>
+    </parameter>
     <parameter type="double" name="border_blur" max="100" min="0" default="0">
-        <name>Border Blur</name>
+        <name>Blur</name>
     </parameter>
     <parameter type="bool" name="invert" default="0">
         <name>Invert</name>
